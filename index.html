@@ -2,146 +2,155 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Documio – KI-Dokumentation für Arztpraxen</title>
   <style>
     body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen;
-      background: #f0f6fb;
-      color: #002244;
+      padding: 0;
+      background-color: #f1f6fb;
+      color: #1f2d3d;
     }
+
     header {
       text-align: center;
       padding: 40px 20px 20px;
     }
-    .logo img {
-      width: 100px;
-      margin-bottom: 20px;
+
+    .logo {
+      width: 60px;
+      margin-bottom: 10px;
     }
+
     h1 {
-      font-size: 1.9rem;
       color: #003366;
-      margin-bottom: 0.4rem;
+      font-size: 24px;
+      font-weight: 700;
     }
-    .subtitle {
-      font-size: 1rem;
-      color: #555;
-      margin-bottom: 20px;
+
+    p.slogan {
+      color: #4a4a4a;
+      margin: 8px 0 16px;
     }
+
     .cta-button {
-      padding: 12px 24px;
-      font-size: 1rem;
       background-color: #007bff;
       color: white;
-      border: none;
+      padding: 10px 20px;
       border-radius: 6px;
-      cursor: pointer;
       text-decoration: none;
+      font-weight: 600;
     }
+
     section {
-      padding: 20px;
-      max-width: 800px;
+      max-width: 720px;
       margin: 0 auto;
-    }
-    .card {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
       padding: 20px;
-      margin-bottom: 20px;
     }
-    .card h2 {
-      margin-top: 0;
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 18px;
       color: #003366;
+      margin-bottom: 12px;
     }
+
     ul {
-      padding-left: 1.2rem;
+      padding-left: 20px;
     }
-    ul li {
-      margin-bottom: 0.5rem;
+
+    li {
+      margin-bottom: 8px;
     }
-    ul li::marker {
-      content: '✅ ';
-      color: green;
-    }
-    .trust {
-      background-color: #d9ecff;
+
+    .trust-banner {
+      background-color: #d7eaff;
       text-align: center;
+      font-weight: 600;
       padding: 10px;
-      font-weight: bold;
-      color: #004080;
-      margin: 30px 0 10px;
+      color: #003366;
+      margin-top: 20px;
     }
-    .testimonial {
-      background: white;
-      padding: 15px;
-      margin: 10px auto;
-      border-radius: 8px;
+
+    .quote {
+      background-color: white;
       border-left: 4px solid #007bff;
-      max-width: 700px;
-    }
-    .testimonial p {
+      padding: 16px;
+      margin: 16px 0;
+      border-radius: 8px;
       font-style: italic;
-      margin-bottom: 5px;
     }
-    .how {
+
+    .how-it-works {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      margin-top: 30px;
+      justify-content: space-between;
+      gap: 10px;
     }
-    .how-step {
-      background: white;
-      padding: 15px;
-      border-radius: 10px;
-      text-align: center;
-      flex: 1 1 180px;
-      min-width: 150px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-    .faq h3, .about h3 {
-      margin-top: 30px;
-      color: #003366;
-    }
-    details {
-      background: white;
+
+    .step {
+      background-color: white;
       border-radius: 8px;
-      padding: 10px 15px;
-      margin-bottom: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+      flex: 1 1 45%;
+      padding: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      min-width: 150px;
+      text-align: center;
     }
-    summary {
-      font-weight: bold;
+
+    .accordion {
+      background-color: #fff;
+      border: none;
       cursor: pointer;
+      padding: 14px;
+      width: 100%;
+      text-align: left;
+      outline: none;
+      font-weight: bold;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      margin-bottom: 8px;
     }
+
+    .panel {
+      padding: 0 14px;
+      display: none;
+      background-color: white;
+      overflow: hidden;
+      margin-top: -8px;
+      margin-bottom: 12px;
+      border-left: 2px solid #007bff;
+    }
+
     footer {
       text-align: center;
-      font-size: 0.9rem;
       padding: 20px;
-      background: #e6f2ff;
+      font-size: 14px;
+      background-color: #f0f0f0;
       color: #333;
-      margin-top: 40px;
     }
+
     footer a {
-      margin: 0 10px;
-      color: #003366;
+      margin: 0 8px;
+      color: #007bff;
       text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="logo">
-      <img src="logo-documio.png" alt="Documio Logo">
-    </div>
+    <img src="logo-documio.png" alt="Documio Logo" class="logo" />
     <h1>Medizinische Dokumentation. Intuitiv. Sicher. Sofort einsatzbereit.</h1>
-    <p class="subtitle">KI-gestützt, DSGVO-konform & getestet von echten Ärzt:innen.</p>
+    <p class="slogan">KI-gestützt, DSGVO-konform & getestet von echten Ärzt:innen.</p>
     <a href="https://huggingface.co/spaces/Documio/Documio" class="cta-button">Jetzt testen</a>
   </header>
 
@@ -154,69 +163,46 @@
     <div class="card">
       <h2>Ihre Vorteile auf einen Blick</h2>
       <ul>
-        <li>Automatische Transkription & Zusammenfassung</li>
-        <li>Sofort einsatzbereit – keine Installation notwendig</li>
-        <li>DSGVO-konformer Datenschutz</li>
-        <li>Export als strukturierter PDF-Befund</li>
-        <li>Praxiserprobt entwickelt mit Ärzt:innen</li>
+        <li>✅ Automatische Transkription & Zusammenfassung</li>
+        <li>✅ Sofort einsetzbereit – keine Installation notwendig</li>
+        <li>✅ DSGVO-konformer Datenschutz</li>
+        <li>✅ Export als strukturierter PDF-Befund</li>
+        <li>✅ Praxisnah entwickelt mit Ärzt:innen</li>
       </ul>
     </div>
 
-    <div class="trust">Vertraut von über 30 Arztpraxen deutschlandweit</div>
+    <div class="trust-banner">Vertraut von über 30 Arztpraxen deutschlandweit</div>
 
-    <div class="testimonial">
-      <p>„Documio spart mir täglich über eine Stunde Schreibarbeit – und das ganz ohne Installation.“</p>
-      <strong>– Dr. med. Lisa H., Hausärztin</strong>
-    </div>
-    <div class="testimonial">
-      <p>„Endlich eine smarte Lösung, die wirklich im Alltag funktioniert. Einfach, schnell, sicher.“</p>
-      <strong>– Dr. Alexander F., Internist</strong>
-    </div>
+    <div class="quote">„Documio spart mir täglich über eine Stunde Schreibarbeit – und das ganz ohne Installation.“<br><strong>– Dr. med. Lisa H., Hausärztin</strong></div>
+
+    <div class="quote">„Endlich eine smarte Lösung, die wirklich im Alltag funktioniert. Einfach, schnell, sicher.“<br><strong>– Dr. Alexander F., Internist</strong></div>
 
     <h2 style="text-align:center; margin-top:40px;">So funktioniert Documio</h2>
-    <div class="how">
-      <div class="how-step">
-        <strong>1. Starten</strong><br/>
-        Aufnahme direkt im Browser
-      </div>
-      <div class="how-step">
-        <strong>2. Transkribieren</strong><br/>
-        KI verarbeitet das Gespräch automatisch
-      </div>
-      <div class="how-step">
-        <strong>3. Zusammenfassen</strong><br/>
-        Automatisch strukturierte Dokumentation
-      </div>
-      <div class="how-step">
-        <strong>4. Exportieren</strong><br/>
-        Befund als PDF sichern oder verwenden
-      </div>
+    <div class="how-it-works">
+      <div class="step"><strong>1. Starten</strong><br>Aufnahme direkt im Browser</div>
+      <div class="step"><strong>2. Transkribieren</strong><br>KI verarbeitet das Gespräch automatisch</div>
+      <div class="step"><strong>3. Zusammenfassen</strong><br>Automatisch strukturierte Dokumentation</div>
+      <div class="step"><strong>4. Exportieren</strong><br>Befund als PDF sichern oder verwenden</div>
     </div>
 
-    <div class="faq">
-      <h3>Häufige Fragen (FAQ)</h3>
-      <details>
-        <summary>Ist Documio wirklich DSGVO-konform?</summary>
-        <p>Ja. Ihre Daten werden streng vertraulich behandelt und entsprechen den deutschen Datenschutzrichtlinien.</p>
-      </details>
-      <details>
-        <summary>Kann ich Documio sofort nutzen?</summary>
-        <p>Ja. Documio funktioniert direkt im Browser – ohne Installation oder Setup.</p>
-      </details>
-      <details>
-        <summary>Wie genau ist die KI-Zusammenfassung?</summary>
-        <p>Die KI wurde medizinisch trainiert und erstellt strukturierte Befunde ähnlich wie bei klassischer Diktatdokumentation.</p>
-      </details>
-      <details>
-        <summary>Welche Geräte werden unterstützt?</summary>
-        <p>Documio funktioniert auf allen modernen Browsern – egal ob PC, Tablet oder Mac.</p>
-      </details>
-    </div>
+    <h2 style="margin-top:40px;">Häufige Fragen (FAQ)</h2>
 
-    <div class="about">
-      <h3>Über uns</h3>
-      <p>Documio ist ein deutsches HealthTech-Startup mit dem Ziel, ärztliche Dokumentation einfacher, schneller und sicherer zu machen. Unser Team arbeitet eng mit Ärzt:innen zusammen und entwickelt Documio direkt aus der Praxis für die Praxis.</p>
-    </div>
+    <button class="accordion">• Ist Documio wirklich DSGVO-konform?</button>
+    <div class="panel"><p>Ja. Ihre Daten werden streng vertraulich behandelt und entsprechen den deutschen Datenschutzrichtlinien.</p></div>
+
+    <button class="accordion">• Kann ich Documio sofort nutzen?</button>
+    <div class="panel"><p>Ja. Documio funktioniert direkt im Browser. Es ist keine Softwareinstallation notwendig.</p></div>
+
+    <button class="accordion">• Wie genau ist die KI-Zusammenfassung?</button>
+    <div class="panel"><p>Die KI wurde medizinisch trainiert und erstellt strukturierte Befunde ähnlich wie bei manueller Diktatdokumentation.</p></div>
+
+    <button class="accordion">• Welche Geräte werden unterstützt?</button>
+    <div class="panel"><p>Documio funktioniert auf allen modernen Browsern, egal ob am PC, Laptop oder Tablet.</p></div>
+
+    <h2 style="margin-top:40px;">Über uns</h2>
+
+    <button class="accordion">• Wer steht hinter Documio?</button>
+    <div class="panel"><p>Documio ist ein deutsches HealthTech-Startup mit dem Ziel, ärztliche Dokumentation einfacher, schneller und sicherer zu machen. Unser Team arbeitet eng mit Ärzt:innen zusammen und entwickelt Documio direkt aus der Praxis für die Praxis.</p></div>
   </section>
 
   <footer>
@@ -225,5 +211,15 @@
     <a href="agb.html">AGB</a>
   </footer>
 
+  <script>
+    const accordions = document.querySelectorAll(".accordion");
+    accordions.forEach(acc => {
+      acc.addEventListener("click", function () {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        panel.style.display = panel.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
 </body>
 </html>

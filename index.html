@@ -1,121 +1,51 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Documio – KI-Dokumentation für Arztpraxen</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(to bottom, #f4f9ff, #e8f0fb);
-      color: #1a1a1a;
-    }
-    header {
-      background: white;
-      padding: 3rem 1rem 2rem;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-    .logo {
-      height: 60px;
-      margin-bottom: 1.5rem;
-    }
-    h1 {
-      font-size: 2rem;
-      color: #002f6c;
-      margin: 0 0 1rem;
-    }
-    .slogan {
-      font-size: 1.2rem;
-      color: #555;
-      margin-bottom: 2rem;
-    }
-    .cta-button {
-      background-color: #0070f3;
-      color: white;
-      padding: 0.8rem 2rem;
-      font-size: 1rem;
-      font-weight: 600;
-      border: none;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
-    .cta-button:hover {
-      background-color: #0058c1;
-    }
-    main {
-      max-width: 800px;
-      margin: 3rem auto;
-      padding: 0 1rem;
-    }
-    section {
-      background: white;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
-      margin-bottom: 2rem;
-    }
-    h2 {
-      font-size: 1.5rem;
-      color: #002f6c;
-      margin-bottom: 1rem;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-      text-align: left;
-    }
-    ul li::before {
-      content: '✅';
-      margin-right: 0.5rem;
-      color: #2ecc71;
-    }
-    ul li {
-      padding: 0.5rem 0;
-      font-size: 1rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      background: #f0f0f0;
-    }
-    footer a {
-      color: #0070f3;
-      text-decoration: none;
-      margin: 0 0.5rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Documio Logo" class="logo">
+    <img src="logo-documio.png" alt="Documio Logo" class="logo" />
     <h1>Medizinische Dokumentation. Intuitiv. Sicher. Sofort einsatzbereit.</h1>
-    <p class="slogan">KI-gestützt, DSGVO-konform & getestet von echten Ärzt:innen.</p>
-    <a href="https://huggingface.co/spaces/Documio/Documio" class="cta-button" target="_blank">Jetzt testen</a>
+    <p class="subline">KI-gestützt, DSGVO-konform & getestet von echten Ärzt:innen.</p>
+    <a href="https://huggingface.co/spaces/Documio/Documio" class="cta-button">Jetzt testen</a>
   </header>
+
   <main>
-    <section>
+    <section class="card">
       <h2>Unsere Mission</h2>
-      <p>Documio reduziert Dokumentationsaufwand in Arztpraxen durch KI-basierte Transkription & medizinische Zusammenfassung. Unsere Software arbeitet direkt im Browser, ohne Installation, und unterstützt Sie bei der Erstellung professioneller Befundberichte.</p>
+      <p>
+        Documio reduziert den Dokumentationsaufwand in Arztpraxen durch KI-basierte Transkription &
+        medizinische Zusammenfassungen. Die Software läuft direkt im Browser – ohne Installation.
+        Für eine präzisere, schnellere und sichere Dokumentation.
+      </p>
     </section>
-    <section>
+
+    <section class="card">
       <h2>Ihre Vorteile auf einen Blick</h2>
       <ul>
-        <li>Automatische Transkription & Zusammenfassung</li>
-        <li>Sofort einsatzbereit – keine Installation notwendig</li>
-        <li>DSGVO-konformer Datenschutz</li>
-        <li>Export als strukturierter PDF-Befund</li>
-        <li>Praxisnah entwickelt mit Ärzt:innen</li>
+        <li>✅ Automatische Transkription & Zusammenfassung</li>
+        <li>✅ Sofort einsetzbar – keine Installation nötig</li>
+        <li>✅ DSGVO-konformer Datenschutz</li>
+        <li>✅ Export als strukturierter PDF-Befund</li>
+        <li>✅ Praxisnah entwickelt mit Ärzt:innen</li>
       </ul>
     </section>
+
+    <section class="card testimonial">
+      <h2>Im Einsatz bei Ärzt:innen</h2>
+      <img src="arztpraxis.jpg" alt="Documio in der Praxis" />
+      <p class="quote">„Documio spart mir jeden Tag wertvolle Zeit – und das ganz ohne Aufwand.“<br>
+      <span class="quote-author">– Dr. med. A. Mustermann, Allgemeinmedizin</span></p>
+    </section>
   </main>
+
   <footer>
-    <a href="impressum.html">Impressum</a>
-    <a href="datenschutz.html">Datenschutz</a>
+    <a href="impressum.html">Impressum</a> |
+    <a href="datenschutz.html">Datenschutz</a> |
     <a href="agb.html">AGB</a>
   </footer>
 </body>

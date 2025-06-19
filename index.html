@@ -8,170 +8,129 @@
     body {
       margin: 0;
       font-family: "Segoe UI", Roboto, Arial, sans-serif;
-      background: linear-gradient(to bottom, #f7faff, #eaf4fd);
-      color: #1c1c1c;
+      background: linear-gradient(to bottom, #f7fafd, #e6f0f4);
+      color: #1a1a1a;
       line-height: 1.6;
       text-align: center;
     }
-
-    header {
-      background-color: #ffffff;
-      padding: 2.5em 1em 2em;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    }
-
     .logo {
-      width: 140px;
-      margin-bottom: 1em;
+      width: 100px;
+      margin: 2rem auto 1rem;
+      display: block;
     }
-
     h1 {
-      font-size: 1.8em;
-      color: #003b73;
-      margin-bottom: 0.3em;
+      font-size: 1.8rem;
+      color: #003366;
     }
-
-    .subline {
-      font-size: 1.1em;
+    .slogan {
       color: #666;
-      margin-bottom: 1.5em;
+      margin-bottom: 1rem;
     }
-
     .cta-button {
-      background-color: #0070f3;
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      background-color: #007bff;
       color: white;
-      padding: 0.9em 2em;
-      text-decoration: none;
       border-radius: 8px;
+      text-decoration: none;
       font-weight: bold;
-      font-size: 1em;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s;
     }
-
     .cta-button:hover {
-      background-color: #005dcc;
+      background-color: #0056cc;
     }
-
     .section {
-      background: white;
-      margin: 2em auto;
-      padding: 2em;
       max-width: 800px;
-      border-radius: 16px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
+      margin: 2rem auto;
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
       text-align: left;
     }
-
-    .section h2 {
-      color: #003b73;
-      font-size: 1.4em;
-      margin-bottom: 1em;
+    h2 {
+      color: #003366;
+      font-size: 1.4rem;
     }
-
-    .section ul {
-      padding-left: 1.2em;
+    ul {
       list-style: none;
+      padding-left: 0;
     }
-
-    .section ul li::before {
+    li {
+      margin: 0.5rem 0;
+    }
+    li::before {
       content: "✅ ";
+      color: green;
     }
-
-    .trust-banner {
-      background-color: #e0f0ff;
-      padding: 1em;
+    .trust-section {
+      background-color: #d8eefe;
+      padding: 1.5rem;
       font-weight: bold;
-      color: #003b73;
-      font-size: 1.05em;
-      border-top: 1px solid #c2e2ff;
-      border-bottom: 1px solid #c2e2ff;
-      margin-top: 3em;
+      color: #004080;
     }
-
-    .testimonials {
-      margin: 2em auto;
-      max-width: 800px;
-    }
-
     .testimonial {
-      background: #ffffff;
-      padding: 1.5em;
-      margin: 1em auto;
-      border-left: 4px solid #0070f3;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
-      border-radius: 12px;
+      background-color: white;
+      max-width: 700px;
+      margin: 1rem auto;
+      padding: 1.5rem;
+      border-radius: 10px;
+      border-left: 4px solid #007bff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
       font-style: italic;
-      font-size: 1.05em;
     }
-
-    .testimonial span {
+    .testimonial strong {
       display: block;
-      margin-top: 0.8em;
+      margin-top: 1rem;
       font-style: normal;
       font-weight: bold;
-      color: #333;
     }
-
     footer {
-      margin-top: 3em;
-      padding: 1em;
-      font-size: 0.9em;
-      background-color: #f0f4f8;
-      color: #0070f3;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      padding: 1rem;
     }
-
     footer a {
-      margin: 0 1em;
+      margin: 0 1rem;
+      color: #007bff;
       text-decoration: none;
-      color: #0070f3;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="logo-documio.png" alt="Documio Logo" class="logo" />
-    <h1>Medizinische Dokumentation. Intuitiv. Sicher. Sofort einsatzbereit.</h1>
-    <p class="subline">KI-gestützt, DSGVO-konform & getestet von echten Ärzt:innen.</p>
-    <a href="https://huggingface.co/spaces/Documio/Documio" class="cta-button">Jetzt testen</a>
-  </header>
+  <img src="logo-documio.png" alt="Documio Logo" class="logo" />
+  <h1>Medizinische Dokumentation. Intuitiv. Sicher. Sofort einsatzbereit.</h1>
+  <p class="slogan">KI-gestützt, DSGVO-konform & getestet von echten Ärzt:innen.</p>
+  <a href="https://huggingface.co/spaces/Documio/Documio" class="cta-button">Jetzt testen</a>
 
-  <section class="section mission">
+  <div class="section">
     <h2>Unsere Mission</h2>
-    <p>
-      Documio reduziert den Dokumentationsaufwand in Arztpraxen durch KI-basierte Transkription &
-      medizinische Zusammenfassungen. Die Software arbeitet direkt im Browser, ohne Installation, und
-      unterstützt Sie bei der Erstellung professioneller Befundberichte.
-    </p>
-  </section>
+    <p>Documio reduziert den Dokumentationsaufwand in Arztpraxen durch KI-basierte Transkription & medizinische Zusammenfassungen. Die Software arbeitet direkt im Browser, ohne Installation, und unterstützt Sie bei der Erstellung professioneller Befundberichte.</p>
+  </div>
 
-  <section class="section benefits">
+  <div class="section">
     <h2>Ihre Vorteile auf einen Blick</h2>
     <ul>
       <li>Automatische Transkription & Zusammenfassung</li>
       <li>Sofort einsatzbereit – keine Installation notwendig</li>
       <li>DSGVO-konformer Datenschutz</li>
       <li>Export als strukturierter PDF-Befund</li>
-      <li>Praxisnah entwickelt mit Ärzt:innen</li>
+      <li>Praxiserprobt entwickelt mit Ärzt:innen</li>
     </ul>
-  </section>
+  </div>
 
-  <div class="trust-banner">
+  <div class="trust-section">
     Vertraut von über 30 Arztpraxen deutschlandweit
   </div>
 
-  <div class="testimonials">
-    <div class="testimonial">
-      „Documio spart mir täglich über eine Stunde Schreibarbeit – und das ganz ohne Installation.“
-      <span>– Dr. med. Lisa H., Hausärztin</span>
-    </div>
-    <div class="testimonial">
-      „Endlich eine smarte Lösung, die wirklich im Alltag funktioniert. Einfach, schnell, sicher.“
-      <span>– Dr. Alexander F., Internist</span>
-    </div>
+  <div class="testimonial">
+    „Documio spart mir täglich über eine Stunde Schreibarbeit – und das ganz ohne Installation.“
+    <strong>– Dr. med. Lisa H., Hausärztin</strong>
+  </div>
+
+  <div class="testimonial">
+    „Endlich eine smarte Lösung, die wirklich im Alltag funktioniert. Einfach, schnell, sicher.“
+    <strong>– Dr. Alexander F., Internist</strong>
   </div>
 
   <footer>

@@ -4,7 +4,97 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Documio – KI-Dokumentation für Arztpraxen</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background: linear-gradient(to bottom, #f7faff, #eaf4fd);
+      color: #1c1c1c;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 2.5em 1em 2em;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .logo {
+      width: 140px;
+      margin-bottom: 1em;
+    }
+
+    h1 {
+      font-size: 1.8em;
+      color: #003b73;
+      margin-bottom: 0.3em;
+    }
+
+    .subline {
+      font-size: 1.1em;
+      color: #666;
+      margin-bottom: 1.5em;
+    }
+
+    .cta-button {
+      background-color: #0070f3;
+      color: white;
+      padding: 0.9em 2em;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #005dcc;
+    }
+
+    .section {
+      background: white;
+      margin: 2em auto;
+      padding: 2em;
+      max-width: 800px;
+      border-radius: 16px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
+      text-align: left;
+    }
+
+    .section h2 {
+      color: #003b73;
+      font-size: 1.4em;
+      margin-bottom: 1em;
+    }
+
+    .section ul {
+      padding-left: 1.2em;
+      list-style: none;
+    }
+
+    .section ul li::before {
+      content: "✅ ";
+    }
+
+    footer {
+      margin-top: 3em;
+      padding: 1em;
+      font-size: 0.9em;
+      background-color: #f0f4f8;
+      color: #0070f3;
+    }
+
+    footer a {
+      margin: 0 1em;
+      text-decoration: none;
+      color: #0070f3;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -14,38 +104,29 @@
     <a href="https://huggingface.co/spaces/Documio/Documio" class="cta-button">Jetzt testen</a>
   </header>
 
-  <main>
-    <section class="card">
-      <h2>Unsere Mission</h2>
-      <p>
-        Documio reduziert den Dokumentationsaufwand in Arztpraxen durch KI-basierte Transkription &
-        medizinische Zusammenfassungen. Die Software läuft direkt im Browser – ohne Installation.
-        Für eine präzisere, schnellere und sichere Dokumentation.
-      </p>
-    </section>
+  <section class="section mission">
+    <h2>Unsere Mission</h2>
+    <p>
+      Documio reduziert den Dokumentationsaufwand in Arztpraxen durch KI-basierte Transkription &
+      medizinische Zusammenfassungen. Die Software läuft direkt im Browser – ohne Installation – und hilft,
+      schnell und sicher professionelle Befundberichte zu erstellen.
+    </p>
+  </section>
 
-    <section class="card">
-      <h2>Ihre Vorteile auf einen Blick</h2>
-      <ul>
-        <li>✅ Automatische Transkription & Zusammenfassung</li>
-        <li>✅ Sofort einsetzbar – keine Installation nötig</li>
-        <li>✅ DSGVO-konformer Datenschutz</li>
-        <li>✅ Export als strukturierter PDF-Befund</li>
-        <li>✅ Praxisnah entwickelt mit Ärzt:innen</li>
-      </ul>
-    </section>
-
-    <section class="card testimonial">
-      <h2>Im Einsatz bei Ärzt:innen</h2>
-      <img src="arztpraxis.jpg" alt="Documio in der Praxis" />
-      <p class="quote">„Documio spart mir jeden Tag wertvolle Zeit – und das ganz ohne Aufwand.“<br>
-      <span class="quote-author">– Dr. med. A. Mustermann, Allgemeinmedizin</span></p>
-    </section>
-  </main>
+  <section class="section benefits">
+    <h2>Ihre Vorteile auf einen Blick</h2>
+    <ul>
+      <li>Automatische Transkription & Zusammenfassung</li>
+      <li>Sofort einsatzbereit – keine Installation notwendig</li>
+      <li>DSGVO-konformer Datenschutz</li>
+      <li>Export als strukturierter PDF-Befund</li>
+      <li>Praxisnah entwickelt mit Ärzt:innen</li>
+    </ul>
+  </section>
 
   <footer>
-    <a href="impressum.html">Impressum</a> |
-    <a href="datenschutz.html">Datenschutz</a> |
+    <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html">Datenschutz</a>
     <a href="agb.html">AGB</a>
   </footer>
 </body>

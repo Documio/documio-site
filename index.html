@@ -24,6 +24,7 @@
     .logo {
       width: 140px;
       margin-bottom: 20px;
+      filter: drop-shadow(0 0 5px rgba(0,0,0,0.3));
     }
 
     h1 {
@@ -45,6 +46,12 @@
       font-weight: bold;
       font-size: 16px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.2s ease-in-out;
+    }
+
+    .cta-button:hover {
+      background-color: #0088cc;
+      transform: scale(1.05);
     }
 
     .section {
@@ -154,8 +161,9 @@
     iframe {
       width: 100%;
       height: 850px;
-      border: none;
-      border-radius: 10px;
+      border: 1px solid #e0e0e0;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     }
   </style>
 </head>
@@ -203,14 +211,8 @@
   <div class="demo-section" id="testen">
     <h2>Documio jetzt live testen</h2>
     <p>Die Anwendung wird direkt hier im Browser geladen – sicher, anonym & kostenlos.</p>
-    <iframe 
-      src="https://documio-documio.hf.space" 
-      width="100%" 
-      height="850" 
-      frameborder="0" 
-      style="border-radius: 10px; box-shadow: 0 0 20px rgba(0,0,0,0.05);"
-      allow="clipboard-write">
-    </iframe>
+    <iframe src="https://documio-documio.hf.space" loading="lazy"></iframe>
+    <p style="font-size: 14px; color: #666; margin-top: 10px;">🔒 Sichere Testphase – keine Daten werden gespeichert</p>
   </div>
 
   <div class="faq">

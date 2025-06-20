@@ -48,6 +48,22 @@
       background-color: #0088cc;
       transform: scale(1.05);
     }
+    .badge-group {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .badge {
+      display: inline-block;
+      background-color: #d9f2e6;
+      color: #007f5f;
+      padding: 6px 12px;
+      font-size: 14px;
+      border-radius: 8px;
+      font-weight: 600;
+    }
     .section {
       background: white;
       margin: 30px auto;
@@ -66,18 +82,9 @@
       list-style: none;
     }
     .features li::before {
-      content: '✔️';
+      content: '✔';
       margin-right: 10px;
       color: #007bff;
-    }
-    .badge {
-      display: inline-block;
-      background-color: #d9f2e6;
-      color: #007f5f;
-      padding: 6px 12px;
-      font-size: 14px;
-      border-radius: 8px;
-      margin-bottom: 20px;
     }
     .testimonials {
       background: #e0edff;
@@ -113,12 +120,6 @@
       font-weight: bold;
       font-size: 16px;
       color: #003366;
-    }
-    footer {
-      text-align: center;
-      font-size: 14px;
-      padding: 30px 20px;
-      background: #f2f2f2;
     }
     .steps {
       display: flex;
@@ -169,6 +170,12 @@
     .contact-button:hover {
       background-color: #218838;
     }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 30px 20px;
+      background: #f2f2f2;
+    }
   </style>
 </head>
 <body>
@@ -180,7 +187,12 @@
   </header>
 
   <div class="section">
-    <span class="badge">Von Ärzt:innen mitentwickelt</span>
+    <div class="badge-group">
+      <span class="badge">Von Ärzt:innen mitentwickelt</span>
+      <span class="badge">Made in Germany</span>
+      <span class="badge">DSGVO-konform</span>
+      <span class="badge">100% webbasiert</span>
+    </div>
     <h2>Was ist Documio?</h2>
     <p>Documio ist eine intuitive KI-Lösung zur automatisierten Dokumentation von Patientengesprächen in Echtzeit. Entwickelt mit Ärzt:innen für Ärzt:innen – praxisnah, sicher und effizient.</p>
   </div>
@@ -222,7 +234,7 @@
     <p>Die Anwendung wird direkt hier im Browser geladen – sicher, anonym & kostenlos.</p>
     <iframe src="https://documio-documio.hf.space" loading="lazy"></iframe>
     <p style="font-size: 14px; color: #666; margin-top: 10px;">🔒 Sichere Testphase – keine Daten werden gespeichert</p>
-    <a class="contact-button" href="mailto:kontakt@documio.de">📩 Kontakt aufnehmen</a>
+    <a class="contact-button" href="mailto:kontakt@documio.de">Kontakt aufnehmen</a>
   </div>
 
   <div class="faq">

@@ -13,30 +13,25 @@
       color: #1f2d3d;
       line-height: 1.6;
     }
-
     header {
       background: linear-gradient(to right, #003366, #0057b8);
       color: white;
       text-align: center;
       padding: 60px 20px 40px;
     }
-
     .logo {
       width: 140px;
       margin-bottom: 20px;
       filter: drop-shadow(0 0 5px rgba(0,0,0,0.3));
     }
-
     h1 {
       font-size: 30px;
       margin-bottom: 10px;
     }
-
     .tagline {
       font-size: 17px;
       margin-bottom: 25px;
     }
-
     .cta-button {
       background-color: #00aaff;
       color: #fff;
@@ -48,12 +43,10 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       transition: all 0.2s ease-in-out;
     }
-
     .cta-button:hover {
       background-color: #0088cc;
       transform: scale(1.05);
     }
-
     .section {
       background: white;
       margin: 30px auto;
@@ -62,45 +55,48 @@
       max-width: 800px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
-
     .section h2 {
       font-size: 22px;
       margin-bottom: 15px;
       color: #002855;
     }
-
     .features li {
       margin: 10px 0;
       list-style: none;
     }
-
     .features li::before {
       content: '✔️';
       margin-right: 10px;
       color: #007bff;
     }
-
+    .badge {
+      display: inline-block;
+      background-color: #d9f2e6;
+      color: #007f5f;
+      padding: 6px 12px;
+      font-size: 14px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
     .testimonials {
       background: #e0edff;
-      padding: 20px;
+      padding: 30px;
       margin: 40px auto;
-      max-width: 800px;
+      max-width: 900px;
       border-radius: 10px;
-      text-align: center;
-      font-size: 18px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      font-size: 17px;
       color: #003366;
     }
-
     .quote {
-      margin: 20px auto;
-      max-width: 720px;
-      font-style: italic;
       background: #ffffff;
       padding: 20px;
       border-radius: 10px;
       border-left: 6px solid #007bff;
+      font-style: italic;
     }
-
     .faq details,
     .about details {
       background: #fdfdfd;
@@ -111,28 +107,24 @@
       cursor: pointer;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
     }
-
     .faq summary,
     .about summary {
       font-weight: bold;
       font-size: 16px;
       color: #003366;
     }
-
     footer {
       text-align: center;
       font-size: 14px;
       padding: 30px 20px;
       background: #f2f2f2;
     }
-
     .steps {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       gap: 15px;
     }
-
     .step {
       background: #ffffff;
       border-radius: 10px;
@@ -141,13 +133,11 @@
       text-align: center;
       box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
     }
-
     .step b {
       display: block;
       margin-bottom: 10px;
       color: #004080;
     }
-
     .demo-section {
       background-color: #ffffff;
       max-width: 900px;
@@ -157,7 +147,6 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       text-align: center;
     }
-
     iframe {
       width: 100%;
       height: 850px;
@@ -176,6 +165,7 @@
   </header>
 
   <div class="section">
+    <span class="badge">Von Ärzt:innen mitentwickelt</span>
     <h2>Was ist Documio?</h2>
     <p>Documio ist eine intuitive KI-Lösung zur automatisierten Dokumentation von Patientengesprächen in Echtzeit. Entwickelt mit Ärzt:innen für Ärzt:innen – praxisnah, sicher und effizient.</p>
   </div>
@@ -187,15 +177,19 @@
       <li>Browserbasiert – kein Download, keine Installation</li>
       <li>DSGVO-konform & sicher gehostet in Europa</li>
       <li>Export als strukturiertes, editierbares PDF</li>
-      <li>Praxisnah entwickelt mit deutschen Ärzt:innen</li>
+      <li>Praxistauglich entwickelt mit echten Ärzt:innen</li>
     </ul>
   </div>
 
-  <div class="testimonials">Documio wird bereits von Dutzenden Arztpraxen in Deutschland genutzt</div>
-
-  <div class="quote">
-    „Documio spart mir täglich über eine Stunde Schreibarbeit – und das ganz ohne Installation.“<br />
-    <strong>&ndash; Dr. med. Lisa H., Hausärztin</strong>
+  <div class="testimonials">
+    <div class="quote">
+      „Documio spart mir täglich über eine Stunde Schreibarbeit – und das ganz ohne Installation.“<br />
+      <strong>&ndash; Dr. med. Lisa H., Hausärztin</strong>
+    </div>
+    <div class="quote">
+      „Endlich ein Tool, das wirklich funktioniert. Meine MFA nutzt es begeistert mit.“<br />
+      <strong>&ndash; Dr. med. Marc S., Internist</strong>
+    </div>
   </div>
 
   <div class="section">
@@ -246,8 +240,8 @@
   </div>
 
   <footer>
-    <a href="impressum.html">Impressum</a> | 
-    <a href="datenschutz.html">Datenschutz</a> | 
+    <a href="impressum.html">Impressum</a> |
+    <a href="datenschutz.html">Datenschutz</a> |
     <a href="agb.html">AGB</a>
     <p>&copy; 2025 Documio GmbH i.G</p>
   </footer>
